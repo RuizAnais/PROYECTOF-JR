@@ -1,0 +1,415 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(233, 232, 232);
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #272726; /* Color de fondo más oscuro para el header */
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: 'Creepster', cursive;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra para profundidad */
+}
+
+header h1 {
+    font-size: 38px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ecf0f1; /* Color de texto más claro para mejor contraste */
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 20px; /* Espaciado más amplio entre los enlaces */
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #474747;
+}
+
+nav a:hover {
+    background-color: #e74c3c; /* Fondo rojo cuando se pasa el mouse */
+    color: #ffffff; /* Texto blanco cuando se pasa el mouse */
+}
+
+/* Opcional: agregar estilos para el menú activo */
+nav a.active {
+    background-color: #3498db; /* Color de fondo para el enlace activo */
+    color: #ffffff; /* Texto blanco para el enlace activo */
+}
+main {
+    padding: 80px 20px 20px;
+}
+
+
+h2 {
+    color: #000000;
+    font-size: 2em;
+    font-family: 'Creepster', cursive;
+    margin-top: 60px;
+}
+
+/* p {
+    
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+} */
+
+.section-header{
+    margin-top: 120px;
+}
+
+.content-section {
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+}
+
+.content-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.left-img {
+    margin-right: 10px;
+}
+
+.right-img {
+    margin-left: 10px;
+}
+
+.carousel {
+    background-color: #000000;
+    border-radius: 10px;
+    border-style:dashed;
+    border-color: white;
+    border-width: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    overflow: hidden;
+    max-width: 1300px;
+    padding: 10px;
+}
+
+.carousel-cell {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#my-video {
+    margin-top: 50px;
+    height: 400px;
+}
+
+#recomendados {
+    margin-top: 150px;
+}
+
+#contenedor{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:50px;
+    margin: 80px;
+}
+
+
+.card{
+    width: 225px;
+    height: 350px;
+    border-radius:20px;
+    padding:25px 20px;
+    /* Trabajando con flex */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px; /*para separar los elementos*/
+    -webkit-box-shadow: 0px 0px 5px 10px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 0px 5px 10px rgba(0,0,0,0.46);
+    box-shadow:0px 0px 5px 10px rgba(0,0,0,0.46);
+    background-color: rgb(41, 41, 41);
+}
+
+.numero{
+    position:relative;
+    top:0;
+    left: 0;
+    width: 225px;
+    height: 125px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parrafo{
+    text-align: center;
+    color: gray;
+}
+
+/* Sección con imagen a la izquierda y texto a la derecha */
+.text-left-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+}
+
+.text-1 {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    justify-content: flex-start;
+    margin: 20px auto;
+    padding: 20px; /* Ajusta el padding para pantallas más pequeñas */
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1200px; /* Mantén un ancho máximo para pantallas grandes */
+    margin-bottom: 130px;
+    gap: 20px; /* Espacio entre el texto y la imagen */
+    flex-wrap: nowrap; /* Asegura que el contenido se mantenga en una fila */
+}
+
+.text-1 p {
+    font-size: 15px;
+    color: white;
+    margin: 0; /* Elimina márgenes adicionales */
+    padding: 0 10px; /* Espacio alrededor del texto para mejor legibilidad */
+    flex: 1; /* Permite que el texto ocupe el espacio disponible */
+}
+
+.text-1 img {
+    max-width: 400px; /* Tamaño máximo de la imagen en pantallas grandes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+    flex-shrink: 0; /* Evita que la imagen se reduzca de tamaño */
+}
+
+@media (max-width: 1200px) {
+    .text-1 {
+        max-width: 90%; /* Ajusta el ancho máximo del contenedor en pantallas medianas */
+    }
+}
+
+@media (max-width: 992px) {
+    .text-1 {
+        max-width: 100%; /* Ajusta el ancho máximo del contenedor en pantallas más pequeñas */
+    }
+
+    .text-1 img {
+        max-width: 300px; /* Reduce el tamaño de la imagen en pantallas más pequeñas */
+        margin-left: 15px; /* Ajusta el margen en pantallas más pequeñas */
+    }
+
+    .text-1 p {
+        font-size: 14px; /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .text-1 {
+        flex-direction: column; /* Cambia la dirección del flex a columna para pantallas muy pequeñas */
+        align-items: center; /* Centra el contenido en pantallas más pequeñas */
+        text-align: center; /* Centra el texto en pantallas más pequeñas */
+    }
+
+    .text-1 img {
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+        margin: 0 0 10px 0; /* Añade margen inferior a la imagen en pantallas más pequeñas */
+    }
+
+    .text-1 p {
+        font-size: 14px; /* Ajusta el tamaño del texto en pantallas más pequeñas */
+        max-width: 100%; /* Asegura que el texto se ajuste al ancho del contenedor */
+    }
+}
+
+
+.text-left-img img {
+    max-width: 40%;
+    margin-right: 20px;
+}
+
+.text-left-img p {
+    flex: 1;
+}
+
+/* Sección con imagen a la derecha y texto a la izquierda */
+.text-right-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    gap: 10px;
+}
+
+.text-right-img img {
+    max-width: 20%;
+    margin-left: 20px;
+}
+
+.text-right-img p {
+    flex: 1;
+}
+
+/* Sección solo con texto */
+.text-only {
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+}
+
+.text-only h3{
+    text-align: start;
+    margin-left: 30px;
+}
+
+#quiz {
+    padding: 20px;
+    background-color: #941515; /* Color de fondo por defecto */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(158, 156, 156, 0.1);
+    color: white;
+    max-width: 1250px;
+    margin: 10px auto;
+    margin-top: 100px;
+}
+
+#quizContainer {
+    background: #fffcf5; /* Fondo más claro y agradable */
+    padding: 30px;
+    border-radius: 15px; /* Bordes redondeados más marcados */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    max-width: 600px; /* Mayor ancho para un mejor espaciado */
+    margin: 20px auto;
+}
+
+#movieInput {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#guessButton, #resetButton {
+    background-color: #222222; /* Color vibrante para los botones */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#guessButton:hover, #resetButton:hover {
+    background-color: #e64a19; /* Color más oscuro en hover */
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+#feedback {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #4caf50; /* Color verde para el feedback positivo */
+    font-size: 1.2em; /* Tamaño de fuente mayor para destacar */
+}
+
+#guessesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#guessesList li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+}
+
+
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 90%;
+    }
+
+    #guessButton, #resetButton {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    #movieInput {
+        width: calc(100% - 16px);
+    }
+}
+
+footer {
+    background: #272726;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+
+  
